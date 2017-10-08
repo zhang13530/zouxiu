@@ -1,0 +1,8 @@
+<ion-view view-title="购物车">
+	<ion-content ng-controller="ctrl2">
+		<div ng-repeat="i in arr" style="width: 100%;overflow: hidden;padding: 3%;">
+			<div style="float: left;"><img style="width: 60px;height: 60px;" src="{{i.goodsListImg}}"/></div>
+			<div style="float: left;"><p style="font-size: 16px;color: red;">数量：{{i.number}}</p></div>
+		</div>
+	</ion-content>
+</ion-view>

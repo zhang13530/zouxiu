@@ -1,0 +1,14 @@
+<ion-view view-title="详情">
+	<ion-content ng-controller="ctrl1">
+		<div class="card" ng-repeat="i in list" style="padding: 3%;">
+			<!--<div class="item item-divider"></div>-->
+			<img src="{{i.goodsListImg}}" />
+			<div class="item">{{i.detail}}</div>
+			<p style="color: red;font-size: 16px;line-height: 20px;">{{i.price}}元</p>
+			<!--<div class="item item-divider"></div>-->
+			
+			
+			<div class="button button-balanced" ng-click="tap()">加入购物车</div>
+		</div>
+	</ion-content>
+</ion-view>

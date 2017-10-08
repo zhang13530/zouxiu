@@ -1,0 +1,20 @@
+<ion-view view-title="首页">
+	<ion-content>
+		<div  style="background: #69717D;display: flex;justify-content:space-around;">
+			<span style="color: white;display:inline-block;width: 20px;text-align: center;vertical-align: top;" ng-repeat="i in str" ng-click="cap(i)">{{i.className}}</span>
+		</div>
+		<ul class="list" >
+			<li class="item item-divider">产品列表</li>
+			
+			<!--<li class="item">
+				<a href="#tabs/first" class="button button-balanced">跳转第一页</a>
+			</li>-->
+			
+		</ul>
+		<a ng-repeat="i in arr" href="#tabs/list/{{i.goodsID}}" style="padding:5%;width: 50%;display: inline-block;">
+			<img src="{{i.goodsListImg}}" style="width:100%;height: 190px;"/>
+			<p style="height: 50px;">{{i.goodsName}}</p>
+			<span style="font-size: 16px; color: red;">{{i.price}}元</span>
+		</a>
+	</ion-content>
+</ion-view>
